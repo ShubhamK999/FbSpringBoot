@@ -1,0 +1,61 @@
+package com.facebookboot.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.facebookboot.entity.FacebookUser;
+
+@Repository
+public class FacebookDAO implements FacebookDAOInterface{
+
+	
+	/*@Autowired
+	private EntityManager em;
+	
+	@Transactional	
+	public int createProfileDAO(FacebookUser fu) {
+		int i=0;
+			em.persist(fu);
+		i=1;
+		return i;
+	}
+		
+	@Transactional
+	public int deleteProfileDAO(long id) {
+		int i = 0;
+		
+		Query q1 = em.createQuery("delete from com.facebookboot.entity.FacebookUser fu where fu.uid=:id")
+				.setParameter("id", id);
+		i = q1.executeUpdate();
+		return i;
+	}
+	
+	
+	public List<FacebookUser> viewProfile(long id) {
+		
+		Query q2 = em.createQuery("from com.facebookboot.entity.FacebookUser fu where fu.uid=:id");
+		q2.setParameter("id", id);
+		List<FacebookUser> l1 = q2.getResultList();		
+		return l1;
+	}
+	
+	
+	public List<FacebookUser> viewAllProfile(){
+		Query q3 = em.createQuery("from com.facebookboot.entity.FacebookUser fu");
+		List<FacebookUser> l2 = q3.getResultList();		
+		return l2;
+		
+	}
+	
+	public 
+	
+	
+	*/
+}
